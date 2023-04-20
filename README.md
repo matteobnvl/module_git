@@ -1,3 +1,4 @@
-# module_git
+## Travail sur les hooks de git
 
-Cherche pas j'suis obligé, ils tiennent ma bouteille de ricard en otage
+### Voir fichier Hook.md
+
