@@ -1,11 +1,13 @@
 ### empecher de commit 
 
-- ```process.exit(1)
-    console.log("Il est impossible de commit");```
+```js 
+process.exit(1)
+console.log("Il est impossible de commit")
+```
 
 ### vérifie que le message de commit commence par bonjour
 
-```
+```js
 if (!commitMsg.startsWith('bonjour')) {
   console.error('Le message de commit doit commencer par "bonjour"');
   process.exit(1);
@@ -14,3 +16,6 @@ if (!commitMsg.startsWith('bonjour')) {
   process.exit(0);
 }
 ```
+
+### vérifie que le nombre de caractère du message est pair
+
