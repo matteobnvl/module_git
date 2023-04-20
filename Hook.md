@@ -33,5 +33,13 @@ if ((commitMessage.length % 2 - 1) !== 0) {
 ### hook qui vérifie que le message de commit commence bien au format “XXX-0000” ou les X sont des lettres et les 0 sont des chiffres
 
 ```js
+const commitMsgRegex = /^[A-Z]{3}-\d{4}/;
 
+if (!commitMsgRegex.test(commitMessage)) {
+  console.error('Le message de commit doit commencer par le format "XXX-0000" où les X sont des lettres et les 0 sont des chiffres');
+  process.exit(1);
+} else {
+  console.log("\x1b[32mCommit message format is valid.\x1b[0m");
+  process.exit(0);
+}
 ```
