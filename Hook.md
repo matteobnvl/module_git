@@ -19,4 +19,6 @@ if (!commitMsg.startsWith('bonjour')) {
 
 ### vérifie que le nombre de caractère du message est pair
 
+```js
 
+```
